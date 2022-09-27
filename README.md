@@ -2,7 +2,7 @@
 
 ## Live Preview
 
-- [Demo]
+- [Demo](https://mihaela-cod.github.io/address-book)
 
 ## Team
 
