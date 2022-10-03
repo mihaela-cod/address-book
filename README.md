@@ -6,5 +6,4 @@
 
 ## Team
 
-- [Manuel Farcaș](#)
 - [Mihaela Codrescu](https://github.com/mihaela-cod)
