@@ -7,3 +7,4 @@
 ## Team
 
 - [Mihaela Codrescu](https://github.com/mihaela-cod)
+- [Manuel Farcas](https://github.com/manuel.farcas)
