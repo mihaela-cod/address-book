@@ -12,7 +12,7 @@
 ## Project Planning
 
 - Import data from JSON
-- Forms (add contact, update contact)
+- Forms (Add contact, Update contact)
 - Implementing Search Results
 - Implementing Pagination | Show n entries per page
 - Add a Print Button
