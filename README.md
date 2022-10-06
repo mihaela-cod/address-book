@@ -13,7 +13,7 @@ HTML | Bootstrap | JavaScript | JSON
 
 ## Project Planning
 
-- Layout Responsive
+- Responsive Layout
 - Display data from JSON
 - Implementing Search Results
 - Implementing Pagination | Show n entries per page
