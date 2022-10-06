@@ -1,5 +1,7 @@
 # Address Book
 
+HTML | Bootstrap | JavaScript | JSON
+
 ## Live Preview
 
 - [Demo](https://mihaela-cod.github.io/address-book/)
@@ -11,9 +13,9 @@
 
 ## Project Planning
 
-- Import data from JSON
-- Forms (Add contact, Update contact)
+- Display data from JSON
 - Implementing Search Results
 - Implementing Pagination | Show n entries per page
+- Forms (Add, Update and Delete contact)
 - Add a Print Button
 - Add a Business Card Print Button
