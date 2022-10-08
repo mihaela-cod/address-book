@@ -1,7 +1,7 @@
-let pageSize = 5;
-let crtPage = 1;
-let persons = [];
-let filteredPersons = [];
+var pageSize = 5;
+var crtPage = 1;
+var persons = [];
+var filteredPersons = [];
 
 function openForm() {
   document.getElementById("addForm").style.display = "block";
@@ -21,19 +21,19 @@ function changePageSize(e) {
 }
 
 function displayPersons(page) {
-  let personsHTML = "";
-  let totalItems = filteredPersons.length;
+  var personsHTML = "";
+  var totalItems = filteredPersons.length;
   if (page * pageSize < totalItems) {
     totalItems = page * pageSize;
   }
 
-  for (let i = (page - 1) * pageSize; i < totalItems; i++) {
-    let person = filteredPersons[i];
+  for (var i = (page - 1) * pageSize; i < totalItems; i++) {
+    var person = filteredPersons[i];
     personsHTML += `
     <tr>
     <td class="hide-print">
     <button class="btn-update" >Update</button>
-    <button class="btn-delete" >Delete</button>
+    <button class="btn-devare" >Devare</button>
     </td>
     <td class="hide-print">
         <p align="center">
@@ -87,7 +87,7 @@ function prev() {
 }
 
 function search() {
-  let term = document.getElementById("search").value;
+  var term = document.getElementById("search").value;
   if (term) {
     filteredPersons = persons.filter(function (p) {
       return (
