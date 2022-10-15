@@ -1,0 +1,91 @@
+/* 
+https://www.w3schools.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Roboto;
+  color: #1d1d1d;
+  font-size: 14px;
+}
+
+div #print {
+  display: inline-block;
+  border: 1px dashed #4b4849;
+  height: 210px;
+  width: 380px;
+  margin: 5px 5px 5px 5px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 20px 20px 0px 30px;
+}
+
+.left {
+  flex: 70%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.right {
+  flex: 30%;
+  text-align: center;
+}
+
+.main-business-card {
+  padding: 0px 20px 0px 30px;
+}
+
+.footer {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 380px;
+  height: 40px;
+  background: #0083d0;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.name {
+  color: #1d1d1d;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.position {
+  color: #0083d0;
+  font-size: 15px;
+}
+
+.image {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+@media print {
+  @page {
+    marks: crop cross;
+    size: portrait;
+  }
+}

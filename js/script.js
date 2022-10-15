@@ -26,18 +26,17 @@ function displayPersons(page) {
   if (page * pageSize < totalItems) {
     totalItems = page * pageSize;
   }
-
   for (var i = (page - 1) * pageSize; i < totalItems; i++) {
     var person = filteredPersons[i];
     personsHTML += `
     <tr>
     <td class="hide-print">
     <button class="btn-update" >Update</button>
-    <button class="btn-devare" >Devare</button>
+    <button class="btn-delete" >Delete</button>
     </td>
     <td class="hide-print">
         <p align="center">
-              <strong>PRINT</strong><br />Carte de vizită
+        <a href="index-print.html?id=${person.id}" target="_blank" data-id="${person.id}" class="btn-business-card">Business Card</a>
         </p>
     </td>
     <td class="hide-print"> <img class="image" src='${person.photo}'> </td>
@@ -111,4 +110,10 @@ function search() {
   }
   crtPage = 1;
   displayPersons(1);
+}
+
+function printPersonRequest(id) {
+  let person = persons.find((p) => {
+    return p.id == id;
+  });
 }
