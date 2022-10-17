@@ -6,64 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Address Book</title>
     <link rel="icon" href="images/logo-favicon.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/maintenance-page.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <header>
       <div class="header">
         <div class="text-white">
           <h1>Address Book</h1>
+          <button class="btn-print hide-print" onclick="display()">
+            <strong>PRINT</strong>
+          </button>
         </div>
       </div>
     </header>
-
     <section class="main">
-      <div class="maintenance">
-        <h2>Maintenance Page</h2>
-        <hr class="hr-footer" />
-        <h3>Project in progress...</h3>
+      <div class="meniu">
+        <div class="meniu-left">
+          <button class="btn-add hide-print" onclick="openForm()">
+            <strong>+ Add Contact</strong>
+          </button>
+          <input
+            type="search"
+            id="search"
+            placeholder="Search"
+            class="search hide-print"
+            oninput="search()"
+          />
+        </div>
+        <div class="meniu-right hide-print">
+          <span> Show entries</span>
+          <select id="pageSizeValue" onchange="changePageSize(event)">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+
+          <a href="#" class="btn-prev" onclick="prev()">&laquo; Prev page</a>
+          <a href="#" class="btn-next" onclick="next()">Next page &raquo;</a>
+        </div>
       </div>
+
+      <div class="form-popup" id="addForm">
+        <form action="" class="form-container hide-print">
+          <div class="form-header">
+            <button type="button" class="btn-close" onclick="closeForm()">
+              <strong>✖</strong>
+            </button>
+            <strong>+ Add Contact</strong>
+          </div>
+
+          <div class="form">
+            <div class="form-input">
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                required
+              />
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company"
+                required
+              />
+              <input
+                type="text"
+                id="branches"
+                name="branches"
+                placeholder="Branches"
+                required
+              />
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Address"
+                required
+              />
+              <input
+                type="text"
+                id="department"
+                name="department"
+                placeholder="Department"
+                required
+              />
+              <input
+                type="text"
+                id="compartment"
+                name="compartment"
+                placeholder="Compartment"
+                required
+              />
+              <input
+                type="text"
+                id="floorNumber"
+                name="floorNumber"
+                placeholder="Floor Number"
+                required
+              />
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Phone Number"
+                required
+              />
+
+              <input type="email" name="email" placeholder="E-mail" required />
+
+              <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                placeholder="Birthday"
+              />
+
+              <input type="text" id="iban" name="iban" placeholder="IBAN" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-save">Save</button>
+        </form>
+      </div>
+
       <div style="overflow-x: auto">
         <table>
           <thead>
             <tr>
-              <th>Group</th>
-              <th>Team</th>
-              <th>Project Name</th>
-              <th>Project URL</th>
+              <th class="hide-print"></th>
+              <th class="hide-print"></th>
+              <th class="hide-print"></th>
+              <th>Name</th>
+              <th class="hide-print">Company</th>
+              <th>Branches</th>
+              <th>Address</th>
+              <th>Department</th>
+              <th>Compartment</th>
+              <th>Position</th>
+              <th>Floor Number</th>
+              <th>Phone Number</th>
+              <th>E-mail</th>
+              <th class="hide-print">Birthday</th>
+              <th class="hide-print">IBAN</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>won8</td>
-              <td>Manuel Farcaș</td>
-              <td>Address Book</td>
-              <td>
-                <a href="#">manuel-farcas/address-book</a>
-              </td>
-            </tr>
-            <tr>
-              <td>won8</td>
-              <td>Mihaela Codrescu</td>
-              <td>Address Book</td>
-              <td>
-                <a href="#">mihaela-codrescu/address-book</a>
-              </td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
     </section>
 
     <footer>
       <div class="footer">
+        <strong>Web Developer Course - FastTruckIT</strong> <br />
+        <strong>Trainer:</strong> Matei Nicolae<br /><br />
+        <strong>Team:</strong> Manuel Farcaș, Mihaela Codrescu <br />
+        <strong>Project Name:</strong> Address Book <br /><br />
+        <hr class="hr-footer" />
         Copyright &copy;
         <script>
           document.write(new Date().getFullYear());
@@ -71,5 +184,7 @@
         - Address Book | Version 1.0
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
