@@ -1,6 +1,6 @@
 # Address Book
 
-HTML | Bootstrap | JavaScript | JSON
+HTML | CSS Flexbox | JavaScript | JSON
 
 ## Live Preview
 
@@ -13,10 +13,8 @@ HTML | Bootstrap | JavaScript | JSON
 
 ## Project Planning
 
-- Responsive Layout
 - Display data from JSON
 - Implementing Search Results
-- Implementing Pagination | Show n entries per page
 - Forms (Add, Update and Delete contact)
 - Add a Print Button
 - Add a Business Card Print Button
