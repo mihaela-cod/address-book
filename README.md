@@ -1,20 +1,5 @@
-# Address Book
+# proiect-test
 
-HTML | CSS Flexbox | JavaScript | JSON
+## LIVE
 
-## Live Preview
-
-- [Demo](https://mihaela-cod.github.io/address-book/)
-
-## Team
-
-- [Mihaela Codrescu](https://github.com/mihaela-cod)
-- [Manuel Farcas](https://github.com/manuel.farcas)
-
-## Project Planning
-
-- Display data from JSON
-- Implementing Search Results
-- Forms (Add, Update and Delete contact)
-- Add a Print Button
-- Add a Business Card Print Button
+[Demo](https://mihaela-cod.github.io/proiect-test/)

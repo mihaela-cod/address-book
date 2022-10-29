@@ -7,7 +7,7 @@ function displayPerson() {
 <div id="print">
       <div class="header">
         <div class="left">
-        <span class="name">${person.firstName} ${person.lastName}</span>
+        <span class="name">${person.name}</span>
         <br />
         <span class="position">${person.position}</span>
         </div>
@@ -40,7 +40,7 @@ function loadPerson() {
     index + 1,
     window.location.href.length
   );
-  fetch("data/contact-data.json")
+  fetch("http://localhost:3000/persons-json")
     .then(function (r) {
       return r.json();
     })
