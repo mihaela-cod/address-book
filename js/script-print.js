@@ -48,7 +48,11 @@ function loadPerson() {
       person = personsArray.find((p) => {
         return p.id == id;
       });
-      displayPerson();
+      if (person) {
+        displayPerson();
+      } else {
+        console.warn("nu am putut gasi %o", id);
+      }
     });
 }
 loadPerson();

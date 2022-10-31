@@ -9,17 +9,9 @@ function $(selector) {
   return document.querySelector(selector);
 }
 
-/*function ConfirmDelete() {
-  return confirm("Are you sure you want to delete this record?");
-}*/
-
 function confirmDelete() {
-  let text = "Are you sure you want to delete this record";
-  if (confirm(text) == true) {
-    text = "You pressed OK!";
-  } else {
-    text = "You canceled!";
-  }
+  const text = "Are you sure you want to delete this record";
+  return confirm(text);
 }
 
 function getPersonHTML(person) {
@@ -28,7 +20,7 @@ function getPersonHTML(person) {
   
   <td>
     <a href="#" data-id="${person.id}" class="btn-update hide-print" title="Update">&#9998;</a>
-    <a href="#" onclick="confirmDelete()" data-id="${person.id}" class="btn-delete hide-print" title="Delete">&#10006;</a>
+    <a href="#" data-id="${person.id}" class="btn-delete hide-print" title="Delete">&#10006;</a>
     </td>
     <td class="hide-print">
         <p align="center">
@@ -195,12 +187,14 @@ function initEvents() {
 
   form.querySelector("tbody").addEventListener("click", (e) => {
     if (e.target.matches("a.btn-delete")) {
-      const id = e.target.getAttribute("data-id");
-      removePersonRequest(id).then((status) => {
-        if (status.success) {
-          loadPersons();
-        }
-      });
+      if (confirmDelete()) {
+        const id = e.target.getAttribute("data-id");
+        removePersonRequest(id).then((status) => {
+          if (status.success) {
+            loadPersons();
+          }
+        });
+      }
     } else if (e.target.matches("a.btn-update")) {
       const id = e.target.getAttribute("data-id");
       startEditPerson(id);
