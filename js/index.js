@@ -1,18 +1,18 @@
 const API = {
   CREATE: {
-    URL: "http://localhost:3000/persons/create",
+    URL: "http://localhost:3000/persons-json/create",
     METHOD: "POST",
   },
   READ: {
-    URL: "http://localhost:3000/persons",
+    URL: "http://localhost:3000/persons-json",
     METHOD: "GET",
   },
   UPDATE: {
-    URL: "http://localhost:3000/persons/update",
+    URL: "http://localhost:3000/persons-json/update",
     METHOD: "PUT",
   },
   DELETE: {
-    URL: "http://localhost:3000/persons/delete",
+    URL: "http://localhost:3000/persons-json/delete",
     METHOD: "DELETE",
   },
 };
