@@ -207,7 +207,20 @@ function initEvents() {
   $("#search").addEventListener("input", (e) => {
     const search = e.target.value.toLowerCase();
     const persons = allPersons.filter((person) => {
-      return person.name.toLowerCase().includes(search);
+      return (
+        person.name.toLowerCase().includes(search) ||
+        person.company.toLowerCase().includes(search) ||
+        person.branches.toLowerCase().includes(search) ||
+        person.address.toLowerCase().includes(search) ||
+        person.department.toLowerCase().includes(search) ||
+        person.compartment.toLowerCase().includes(search) ||
+        person.position.toLowerCase().includes(search) ||
+        person.floorNumber.toLowerCase().includes(search) ||
+        person.phoneNumber.toLowerCase().includes(search) ||
+        person.email.toLowerCase().includes(search) ||
+        person.birthday.toLowerCase().includes(search) ||
+        person.iban.toLowerCase().includes(search)
+      );
     });
     displayPersons(persons);
   });
