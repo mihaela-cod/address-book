@@ -60,7 +60,7 @@ function getPersonHTML(person) {
         <a href="index-print.html?id=${person.id}" target="_blank" data-id="${person.id}" class="btn-business-card hide-print" title="Print"><i class="fa-solid fa-print"></i> Business Card</a>
         </p>
     </td>
-    <td class="hide-print"> <img class="images" src='${person.photo}'> </td>
+    <td class="hide-print"> <div align="center"><img class="images" src='${person.photo}'> </div></td>
     <td>${person.name}</td>
     <td class="hide-print">${person.company}</td>
     <td>${person.branches}</td>
