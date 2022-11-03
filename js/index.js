@@ -51,9 +51,9 @@ function getPersonHTML(person) {
   return `
   <tr>
   
-  <td>
-    <a href="#" data-id="${person.id}" class="btn-update hide-print" title="Update">&#9998;</a>
-    <a href="#" data-id="${person.id}" class="btn-delete hide-print" title="Delete">&#10006;</a>
+  <td class="hide-print">
+    <a href="#" data-id="${person.id}" class="btn-update" title="Update">&#9998;</a>
+    <a href="#" data-id="${person.id}" class="btn-delete" title="Delete">&#10006;</a>
     </td>
     <td class="hide-print">
         <p align="center">
