@@ -230,8 +230,8 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-  .meniu-right,
-  .meniu-left {
+  .menu-right,
+  .menu-left {
     flex: 100%;
     margin: 5px 0px 5px 0px;
     text-align: center;
