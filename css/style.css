@@ -257,7 +257,7 @@ a:hover {
   --s: .25em; /* marime margini */
   --color: #373B44;
   
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  padding: calc(1em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
   background:
