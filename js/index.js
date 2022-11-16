@@ -1,35 +1,3 @@
-const API = {
-  CREATE: {
-    URL: "http://localhost:3000/persons/create",
-    METHOD: "POST",
-  },
-  READ: {
-    URL: "http://localhost:3000/persons",
-    METHOD: "GET",
-  },
-  UPDATE: {
-    URL: "http://localhost:3000/persons/update",
-    METHOD: "PUT",
-  },
-  DELETE: {
-    URL: "http://localhost:3000/persons/delete",
-    METHOD: "DELETE",
-  },
-};
-
-// for demo...
-const isDemo = true || location.host === "mihaela-cod.github.io";
-const inlineChanges = isDemo;
-if (isDemo) {
-  API.READ.URL = "data/persons.json";
-  API.DELETE.URL = "data/delete.json";
-  API.CREATE.URL = "data/create.json";
-  API.UPDATE.URL = "data/update.json";
-
-  API.DELETE.METHOD = "GET";
-  API.CREATE.METHOD = "GET";
-  API.UPDATE.METHOD = "GET";
-}
 
 let allPersons = [];
 let editId;

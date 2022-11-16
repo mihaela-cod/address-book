@@ -9,7 +9,7 @@ HTML | CSS Flexbox | Bootstrap | JavaScript | JSON
 ## Team
 
 - [Mihaela Codrescu](https://github.com/mihaela-cod)
-- [Manuel Farcaș](https://github.com/manuel.farcas)
+- [Manuel Farcaș](https://github.com/manuelfarcas)
 
 ## Project Planning
 
