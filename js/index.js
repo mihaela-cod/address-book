@@ -42,11 +42,6 @@ function $(selector) {
   return document.querySelector(selector);
 }
 
-function confirmDelete() {
-  const text = "Are you sure you want to delete this record";
-  return confirm(text);
-}
-
 function getPersonHTML(person) {
   return `
   <tr>
@@ -201,6 +196,11 @@ function startEditPerson(id) {
   const person = allPersons.find((person) => person.id === id);
   setFormValues(person);
   editId = id;
+}
+
+function confirmDelete() {
+  const text = "Are you sure you want to delete this record";
+  return confirm(text);
 }
 
 function initEvents() {
