@@ -26,7 +26,7 @@ select {
   background-color: #ffffff;
   color: #1d1d1d;
   padding: 8px;
-  border: 1px solid #1d1d1d;
+  border: 1px solid #222831;
   border-radius: 0px 5px 0px 5px;
 }
 
@@ -34,7 +34,7 @@ select {
   display: flex;
   flex-direction: row;
   position: fixed;
-  background-color: #09BC8A;
+  background-color: #00ADB5;
   width: 100%;
   height: 100px;
   padding: 30px 20px 30px 20px;
@@ -42,7 +42,7 @@ select {
 
 .text-white {
   flex: 1;
-  color: #2D2D2D;
+  color: #222831;
   text-align: center;
   font-size: 30px;
 }
@@ -54,7 +54,7 @@ select {
 
 .footer,
 .push {
-  background-color: #09BC8A;
+  background-color: #00ADB5;
   height: 100%;
   padding: 20px;
   text-align: center;
@@ -62,7 +62,7 @@ select {
 
 .hr-footer {
   width: 50%;
-  border: 0.5px solid #bc093b;
+  border: 0.5px solid #393E46;
   text-align: center;
 }
 
@@ -125,7 +125,8 @@ input {
   margin-bottom: 2px;
   height: 30px;
   padding: 8px;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #393E46;
+  border-radius: 3px;
   outline: none;
 }
 
@@ -183,7 +184,6 @@ a:hover {
   border-radius: 0px 5px 0px 5px;
 }
 
-/*.form-container .btn:hover,*/
 .btn-add:hover {
   background-color: #1e1a1b;
   color: #ffffff;
@@ -191,18 +191,18 @@ a:hover {
 }
 
 .btn-update:hover {
-  background-color: #bc093b;
+  background-color: #00ADB5;
   color: #ffffff;
   opacity: 0.8;
 }
 
 .btn-delete:hover {
-  background-color: #bc093b;
+  background-color: #00ADB5;
   color: #ffffff;
 }
 
 .btn-print:hover {
-  background-color: #bc093b;
+  background-color: #00ADB5;
   color: #ffffff;
   opacity: 0.8;
 }
@@ -214,20 +214,19 @@ a:hover {
 }
 
 .btn-print {
-  background-color: #c1c1c1;
-  color: #1d1d1d;
+  background-color: #FFFFFF;
   border-radius: 10px 100px / 120px;
-  border: none;
+  border: 1px solid #222831;
   cursor: pointer;
   width: 150px;
   height: 35px;
 }
 
 .search {
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
   color: #212529;
   border-radius: 10px 100px / 120px;
-  border: 1px solid #1d1d1d;
+  border: 1px solid #222831;
   cursor: pointer;
   width: 150px;
   height: 35px;
