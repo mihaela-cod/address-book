@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
   font-family: Roboto;
   font-size: 15px;
   color: #1d1d1d;
@@ -54,7 +54,7 @@ select {
 
 .footer,
 .push {
-  background-color: #e7e9eb;
+  background-color: #09BC8A;
   height: 100%;
   padding: 20px;
   text-align: center;
@@ -62,7 +62,7 @@ select {
 
 .hr-footer {
   width: 50%;
-  border: 1px solid #c1c1c1;
+  border: 0.5px solid #bc093b;
   text-align: center;
 }
 
@@ -102,7 +102,7 @@ tr {
 }
 
 tr:nth-child(even) {
-  background-color: #e7e9eb;
+  background-color: #FFFFFF;
 }
 th {
   border-bottom: 1px solid #1d1d1d;
@@ -141,7 +141,7 @@ a:hover {
 }
 
 .btn-add {
-  background-color: #c1c1c1;
+  background-color: #FFFFFF;
   color: #1d1d1d;
   border: none;
   margin-bottom: 3px;
@@ -153,7 +153,7 @@ a:hover {
 }
 
 .btn-update {
-  background-color: #c1c1c1;
+  background-color: #FFFFFF;
   color: #1d1d1d;
   border: none;
   margin-bottom: 3px;
@@ -164,7 +164,7 @@ a:hover {
 }
 
 .btn-delete {
-  background-color: #c1c1c1;
+  background-color: #FFFFFF;
   color: #1d1d1d;
   border: none;
   width: 40px;
@@ -174,7 +174,7 @@ a:hover {
 }
 
 .btn-busines-card {
-  background-color: #c1c1c1;
+  background-color: #FFFFFF;
   color: #1d1d1d;
   border: none;
   cursor: pointer;
@@ -191,31 +191,32 @@ a:hover {
 }
 
 .btn-update:hover {
-  background-color: #1e1a1b;
+  background-color: #bc093b;
   color: #ffffff;
   opacity: 0.8;
 }
 
 .btn-delete:hover {
-  background-color: #ef4c2d;
+  background-color: #bc093b;
   color: #ffffff;
 }
 
 .btn-print:hover {
-  background-color: #1e1a1b;
+  background-color: #bc093b;
   color: #ffffff;
   opacity: 0.8;
 }
 
 .btn-busines-card:hover {
-  background-color: #1e1a1b;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #bc093b;
   opacity: 0.8;
 }
 
 .btn-print {
   background-color: #c1c1c1;
   color: #1d1d1d;
+  border-radius: 10px 100px / 120px;
   border: none;
   cursor: pointer;
   width: 150px;
@@ -225,6 +226,7 @@ a:hover {
 .search {
   background-color: #f8f9fa;
   color: #212529;
+  border-radius: 10px 100px / 120px;
   border: 1px solid #1d1d1d;
   cursor: pointer;
   width: 150px;
