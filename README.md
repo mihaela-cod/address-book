@@ -1,6 +1,6 @@
 # Address Book
 
-HTML | CSS Flexbox | Bootstrap | JavaScript | JSON
+HTML | CSS Flexbox | JavaScript | JSON
 
 ## Live Preview
 
