@@ -133,7 +133,7 @@ input {
 }
 
 a {
-  color: #0093e9;
+  color: #1d1d1d;
   text-decoration: none;
   display: inline-block;
   padding: 5px;
@@ -141,7 +141,7 @@ a {
 
 a:hover {
   background-color: #ddd;
-  color: #1d1d1d;
+  color: #0093e9;
 }
 
 .btn-add {
