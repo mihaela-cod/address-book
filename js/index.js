@@ -1,4 +1,3 @@
-
 let allPersons = [];
 let editId;
 
@@ -13,7 +12,6 @@ function $(selector) {
 function getPersonHTML(person) {
   return `
   <tr>
-  
   <td class="hide-print">
     <a href="#" data-id="${person.id}" class="btn-update" title="Update">&#9998;</a>
     <a href="#" data-id="${person.id}" class="btn-delete" title="Delete">&#10006;</a>
@@ -24,7 +22,7 @@ function getPersonHTML(person) {
         </p>
     </td>
     <td class="hide-print"> <div align="center"><img class="images" src='${person.photo}'> </div></td>
-    <td>${person.name}</td>
+    <td><b>${person.name}</b></td>
     <td class="hide-print">${person.company}</td>
     <td>${person.branches}</td>
     <td>${person.address}</td>
@@ -36,9 +34,6 @@ function getPersonHTML(person) {
     <td>${person.email}</td>
     <td class="hide-print">${person.birthday}</td>
     <td class="hide-print">${person.iban}</td>
-    
-    
-    
   </tr>`;
 }
 
