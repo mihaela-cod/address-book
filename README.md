@@ -4,7 +4,7 @@ HTML | CSS Flexbox | JavaScript | JSON
 
 ## Live Preview
 
-- [Demo](https://mihaela-cod.github.io/address-book/)
+- [Address Book](https://mihaela-cod.github.io/address-book/)
 
 ## Team
 

@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: Roboto;
   font-size: 15px;
   color: #1d1d1d;
@@ -34,14 +34,14 @@ select {
   display: flex;
   flex-direction: row;
   position: fixed;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #00adb5 100%);  
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #00adb5 100%);
   width: 100%;
   height: 100px;
   padding: 30px 20px 30px 20px;
 }
 
-.text-white {
+.header-text {
   flex: 1;
   color: #222831;
   text-align: center;
@@ -55,18 +55,16 @@ select {
 
 .footer,
 .push {
-  
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #00adb5 100%);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #00adb5 100%);
   height: 100%;
   padding: 20px;
   text-align: justify;
-  
 }
 
 .hr-footer {
   width: 100%;
-  border: 0.5px solid #393E46;
+  border: 0.5px solid #393e46;
   text-align: right;
 }
 
@@ -106,7 +104,7 @@ tr {
 }
 
 tr:nth-child(even) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 th {
   border-bottom: 1px solid #1d1d1d;
@@ -130,11 +128,12 @@ input {
   height: 30px;
   padding: 8px;
   border: 1px solid #393E46;
-  border-radius: none;
+  border-radius: 3px;
   outline: none;
 }
 
 a {
+  color: #1d1d1d;
   text-decoration: none;
   display: inline-block;
   padding: 5px;
@@ -142,11 +141,11 @@ a {
 
 a:hover {
   background-color: #ddd;
-  color: #1d1d1d;
+  color: #0093e9;
 }
 
 .btn-add {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #1d1d1d;
   border: none;
   margin-bottom: 3px;
@@ -158,7 +157,7 @@ a:hover {
 }
 
 .btn-update {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #1d1d1d;
   border: none;
   margin-bottom: 3px;
@@ -169,7 +168,7 @@ a:hover {
 }
 
 .btn-delete {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #1d1d1d;
   border: none;
   width: 40px;
@@ -179,7 +178,7 @@ a:hover {
 }
 
 .btn-busines-card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #1d1d1d;
   border: none;
   cursor: pointer;
@@ -195,42 +194,46 @@ a:hover {
 }
 
 .btn-update:hover {
-  background-color: #0093E9;
+  background-color: #0093e9;
   color: #ffffff;
   opacity: 0.8;
 }
 
 .btn-delete:hover {
-  background-color: #0093E9;
+  background-color: #0093e9;
   color: #ffffff;
 }
 
 .btn-print:hover {
-  background-color: #0093E9;
+  background-color: #0093e9;
   color: #ffffff;
   opacity: 0.8;
 }
 
 .btn-busines-card:hover {
-  background-color: #FFFFFF;
-  color: #0093E9;
+  background-color: #ffffff;
+  color: #0093e9;
   opacity: 0.8;
 }
 
 .btn-print {
-  --b: 1.5px;   /* marime border */
-  --s: .25em; /* marime margini */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  --b: 1.5px; /* marime border */
+  --s: 0.25em; /* marime margini */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
-  outline-offset: .6em;
+  outline-offset: 0.6em;
   font-size: 16px;
 
   border: 0;
@@ -241,10 +244,10 @@ a:hover {
 }
 
 .btn-print:hover,
-.btn-print:focus-visible{
+.btn-print:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 
 .btn-print:active {
@@ -253,19 +256,23 @@ a:hover {
 }
 
 .search {
-  --b: 1.5px;   /* marime border */
-  --s: .25em; /* marime margini */
-  --color: #373B44;
-  
-  padding: calc(1em + var(--s)) calc(.9em + var(--s));
+  --b: 1.5px; /* marime border */
+  --s: 0.25em; /* marime margini */
+  --color: #373b44;
+
+  padding: calc(1em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
-  outline-offset: .6em;
+  outline-offset: 0.6em;
   font-size: 16px;
 
   border: 0;
